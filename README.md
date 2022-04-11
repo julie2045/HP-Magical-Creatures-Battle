@@ -10,7 +10,7 @@ This Harry Potter themed battle game with magical creatures is similar to role-p
 2. Choose a special skill that each character has to use in the battle.
 
 3. Once chosen, choose an environment from the list of environments for the battle to take place in. 
-<strong>Remember the type of environment depends on whether your chosen character will do well or not! </strong>
+<strong>>Keep in mind that the type of environment may affect how well your chosen character will do in battle. </strong>
 
 4. Type yes when the display asks for, "Ready to Battle?"
 
