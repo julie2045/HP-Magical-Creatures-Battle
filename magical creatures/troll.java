@@ -1,11 +1,11 @@
-public class Troll {
+public class Troll extends Creature {
 
     public String species() {
         return "Troll"; 
     }
 
     public String description () {
-        return "A large magical beast of prodigious strength and immense stupidity \nStrengths: strong and big \nWeaknesses: lack of intelligence"
+        return "A large magical beast of prodigious strength and immense stupidity \nStrengths: strong and big \nWeaknesses: lack of intelligence";
     }
 
     public int health() {

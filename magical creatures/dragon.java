@@ -1,4 +1,4 @@
-public class Dragon {
+public class Dragon extends Creature{
 
     public String species() {
         return "Dragon"; 
