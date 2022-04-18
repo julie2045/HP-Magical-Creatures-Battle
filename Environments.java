@@ -1,7 +1,7 @@
 public class Environment  {
   
-   enum envirTypes {
-    MOUNTAINS, SWAMP, FORBIDDEN FOREST, UNDERWORLD;
+   public static enum envirTypes {
+    MOUNTAINS, SWAMP, FORBIDDEN_FOREST, UNDERWORLD;
     }   
 
 }

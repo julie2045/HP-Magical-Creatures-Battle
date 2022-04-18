@@ -17,9 +17,8 @@ public class Mandrake extends Creature{
         return 15;
     }
 
-
-    public String bestEnvir() {
-        return "Swamp";
+  public Environment.envirTypes bestEnvir() {
+        return Environment.envirTypes.SWAMP;
     }
 
    

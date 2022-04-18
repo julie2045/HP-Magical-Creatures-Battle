@@ -16,9 +16,9 @@ public class Troll extends Creature {
         return 15;
     }
 
-    public String bestEnvir() {
-        return "Mountains";
-    }
+       public Environment.envirTypes bestEnvir() {
+        return Environment.envirTypes.MOUNTAINS;
+       }
 
     
 }

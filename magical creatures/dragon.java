@@ -18,9 +18,11 @@ public class Dragon extends Creature{
     }
 
 
-    public String bestEnvir() {
-        return "Mountains";
+    public Environment.envirTypes bestEnvir() {
+        return Environment.envirTypes.MOUNTAINS;
     }
+       
+    
 
     
 }

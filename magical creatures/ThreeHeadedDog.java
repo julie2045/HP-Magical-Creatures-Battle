@@ -18,8 +18,8 @@ public class ThreeHeadedDog extends Creature{
     }
 
 
-    public String bestEnvir() {
-        return "Underworld";
+    public Environment.envirTypes bestEnvir() {
+        return Environment.envirTypes.UNDERWORLD;
     }
 
    

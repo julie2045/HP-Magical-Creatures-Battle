@@ -18,8 +18,8 @@ public class Unicorn extends Creature{
     }
 
 
-    public String bestEnvir() {
-        return "Forbidden Forest";
+    public Environment.envirTypes bestEnvir() {
+        return Environment.envirTypes.FORBIDDEN_FOREST;
     }
 
 }
