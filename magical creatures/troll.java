@@ -20,9 +20,5 @@ public class Troll extends Creature {
         return "Mountains";
     }
 
-    //stock keeping unique
-    public String sku() {
-        return "tro0001";
-        
-    }
+    
 }

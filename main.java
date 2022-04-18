@@ -18,6 +18,26 @@ public class Main {
         System.out.println("Unicorn");
         System.out.println("Cerberus");
         System.out.println("Mandrake");
+
+//user input
+    System.out.println();
+    Scanner myObj = new Scanner(System.in);
+    
+    String creatureName1;
+    // Enter first creature and press Enter
+    System.out.println("Enter first creature: "); 
+    creatureName1 = myObj.nextLine();   
+       
+    System.out.println("Chosen creature 1: " + creatureName1); 
+       System.out.println();
+    
+  
+    String creatureName2;
+    // Enter second creautre and press Enter
+    System.out.println("Enter second creature: "); 
+    creatureName2 = myObj.nextLine();   
+       
+    System.out.println("Chosen creature 2: " + creatureName2);
     }
 }
 

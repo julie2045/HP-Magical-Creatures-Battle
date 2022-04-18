@@ -22,9 +22,5 @@ public class Hippogriff extends Creature{
         return "Forbidden Forest";
     }
 
-    //stock keeping unit
-    public String sku() {
-        return "hip0001";
-
-    }
+   
 }

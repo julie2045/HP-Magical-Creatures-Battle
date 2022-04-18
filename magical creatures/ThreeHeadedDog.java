@@ -22,9 +22,5 @@ public class ThreeHeadedDog extends Creature{
         return "Underworld";
     }
 
-    //stock keeping unit
-    public String sku() {
-        return "dog0001";
-
-    }
+   
 }

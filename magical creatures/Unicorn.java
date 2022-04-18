@@ -22,9 +22,4 @@ public class Unicorn extends Creature{
         return "Forbidden Forest";
     }
 
-    //stock keeping unit
-    public String sku() {
-        return "uni0001";
-
-    }
 }

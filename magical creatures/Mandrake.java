@@ -22,9 +22,5 @@ public class Mandrake extends Creature{
         return "Swamp";
     }
 
-    //stock keeping unit
-    public String sku() {
-        return "tro0001";
-
-    }
+   
 }

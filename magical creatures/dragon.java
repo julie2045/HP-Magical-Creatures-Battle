@@ -22,9 +22,5 @@ public class Dragon extends Creature{
         return "Mountains";
     }
 
-    //stock keeping unit
-    public String sku() {
-        return "dra0001";
-
-    }
+    
 }
