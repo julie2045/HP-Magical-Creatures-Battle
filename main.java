@@ -32,12 +32,55 @@ public class Main {
        System.out.println();
     
   
+  //print out description of chosen creature
+    if (creatureName1 == dragon){
+        System.out.println(description of dragon); //continue for the rest of the animals and also do the same for creatureName2
+    }
+
+  
     String creatureName2;
     // Enter second creautre and press Enter
     System.out.println("Enter second creature: "); 
     creatureName2 = myObj.nextLine();   
        
     System.out.println("Chosen creature 2: " + creatureName2);
-    }
-}
+    
 
+
+    //environment if and else statements --> increase strength depening on their best environment 
+
+    String chosenEnvir;
+    System.out.println("Choose the environment (mountains, swamp, forbidden_forest, underworld): ";
+    chosenEnvir = myObj.nextLine();
+
+    system.out.println("Environment is " + chosenEnvir);
+
+    if (chosenEnvir == mountains);
+        int.strength(Dragon) += 10;
+        int.strength(Troll) += 10;
+
+    
+    if (chosenEnvir == swamp);
+        int.strength(Mandrake) += 10;
+
+    if (chosenEnvir == forbidden_forest);
+        int.strength(Hippogriff) += 10;
+        int.strength(Unicorn) += 10;
+
+    if (chosenEnvir == underworld);
+        int.strength(ThreeHeadedDog) += 10;
+       
+
+    //ask if ready to battle 
+    String readyBattle;
+    System.out.println("Ready for battle? (yes): ";
+    readyBattle = myObj.nextLine();
+    system.out.println("Fight!")
+
+
+    //battle begins, load each decrease of health 
+
+    
+
+    //show the winner who does not have a health of zero first 
+}
