@@ -4,7 +4,7 @@ public class Troll extends Creature {
         return "Troll"; 
     }
 
-    public String description () {
+    public String description() {
         return "A large magical beast of prodigious strength and immense stupidity \nStrengths: strong and big \nWeaknesses: lack of intelligence";
     }
 

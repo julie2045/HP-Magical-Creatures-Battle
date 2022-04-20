@@ -4,7 +4,7 @@ public class Hippogriff extends Creature{
         return "Hippogriff"; 
     }
 
-    public String description () {
+    public String description() {
         return " A magical beast that has the front legs, wings, and head of an eagle and the body, hind legs, and tail of a horse. Hippogriffs are carnivores and are extremely dangerous to be tamed. \nStrengths: quick reactions, loyal, independent \nWeaknesses: a bit too independent and have a hard time trusting others";
     }
 

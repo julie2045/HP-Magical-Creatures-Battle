@@ -4,7 +4,7 @@ public class Dragon extends Creature{
         return "Dragon"; 
     }
 
-    public String description () {
+    public String description() {
         return "Giant winged, fire-breathing reptilian beasts \nStrengths: fly, breathe fire, giant creatures \nWeaknesses: eyes are their weakest point";
     }
 

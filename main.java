@@ -1,3 +1,5 @@
+import java.util.Scanner; // import the Scanner class 
+import java.util.ArrayList; // import the ArrayList class
 
 public class Main {
 
@@ -11,13 +13,25 @@ public class Main {
 
         System.out.println("Choose your magical creature to use for battle!");
         System.out.println("-".repeat(93));
-        //list of creatures
-        System.out.println("Troll");
-        System.out.println("Dragon");
-        System.out.println("Hippogriff");
-        System.out.println("Unicorn");
-        System.out.println("Cerberus");
-        System.out.println("Mandrake");
+         
+     //creating the creatures 
+        var myDragon = new Dragon();
+        var myHippogriff = new Hippogriff();
+        var myMandrake = new Mandrake();
+        var myThreeHeadedDog = new ThreeHeadedDog();
+        var myTroll = new Troll();
+        var myUnicorn = new Unicorn();
+
+    //make array of creatures to number
+      ArrayList<String> Creat = new ArrayList<String>();  
+        Creat.add("Dragon (0)");
+        Creat.add("Hippogriff (1)");
+        Creat.add("Mandrake (2)");
+        Creat.add("ThreeHeadedDog (3)");
+        Creat.add("Troll (4)");
+        Creat.add("Unicorn (5)");
+        System.out.println(Creat);
+
 
 //user input
     System.out.println();
@@ -25,50 +39,73 @@ public class Main {
     
     String creatureName1;
     // Enter first creature and press Enter
-    System.out.println("Enter first creature: "); 
+    System.out.println("Enter first creature using the corresponding number that belongs to the creature you want: "); 
     creatureName1 = myObj.nextLine();   
-       
-    System.out.println("Chosen creature 1: " + creatureName1); 
-       System.out.println();
-    
+
   
   //print out description of chosen creature
-    if (creatureName1 == dragon){
-        System.out.println(description of dragon); //continue for the rest of the animals and also do the same for creatureName2
-    }
+    if (creatureName1.equals("0")){
+            System.out.println("Dragon: " + myDragon.description()); 
+        } 
+
+    else if (creatureName1.equals("1")){
+            System.out.println("Hippogriff: " + myHippogriff.description()); 
+        } 
+    
+    else if (creatureName1.equals("2")){
+            System.out.println("Mandrake: " + myMandrake.description()); 
+        } 
+    
+    else if (creatureName1.equals("3")){
+            System.out.println("ThreeHeadedDog: " + myThreeHeadedDog.description()); 
+        } 
+
+    else if (creatureName1.equals("4")){
+            System.out.println("Troll: " + myTroll.description()); 
+        } 
+    else if (creatureName1.equals("5")){
+            System.out.println("Unicorn: " + myUnicorn.description()); 
+        } 
+  
+  
 
   
     String creatureName2;
-    // Enter second creautre and press Enter
+    // Enter second creature and press Enter
+    System.out.println();
     System.out.println("Enter second creature: "); 
     creatureName2 = myObj.nextLine();   
        
-    System.out.println("Chosen creature 2: " + creatureName2);
     
+  //print out description of chosen creature
+    if (creatureName2.equals("0")){
+            System.out.println("Dragon: " + myDragon.description()); 
+        } 
 
+    else if (creatureName2.equals("1")){
+            System.out.println("Hippogriff: " + myHippogriff.description()); 
+        } 
+    
+    else if (creatureName2.equals("2")){
+            System.out.println("Mandrake: " + myMandrake.description()); 
+        } 
+    
+    else if (creatureName2.equals("3")){
+            System.out.println("ThreeHeadedDog: " + myThreeHeadedDog.description()); 
+        } 
 
+    else if (creatureName2.equals("4")){
+            System.out.println("Troll: " + myTroll.description()); 
+        } 
+    else if (creatureName2.equals("5")){
+            System.out.println("Unicorn: " + myUnicorn.description()); 
+        } 
+
+    }
+}
     //environment if and else statements --> increase strength depening on their best environment 
 
-    String chosenEnvir;
-    System.out.println("Choose the environment (mountains, swamp, forbidden_forest, underworld): ";
-    chosenEnvir = myObj.nextLine();
 
-    system.out.println("Environment is " + chosenEnvir);
-
-    if (chosenEnvir == mountains);
-        int.strength(Dragon) += 10;
-        int.strength(Troll) += 10;
-
-    
-    if (chosenEnvir == swamp);
-        int.strength(Mandrake) += 10;
-
-    if (chosenEnvir == forbidden_forest);
-        int.strength(Hippogriff) += 10;
-        int.strength(Unicorn) += 10;
-
-    if (chosenEnvir == underworld);
-        int.strength(ThreeHeadedDog) += 10;
        
 
     //ask if ready to battle 
