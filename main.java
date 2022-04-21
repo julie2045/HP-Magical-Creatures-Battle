@@ -22,89 +22,45 @@ public class Main {
         var myTroll = new Troll();
         var myUnicorn = new Unicorn();
 
-    //make array of creatures to number
-      ArrayList<String> Creat = new ArrayList<String>();  
-        Creat.add("Dragon (0)");
-        Creat.add("Hippogriff (1)");
-        Creat.add("Mandrake (2)");
-        Creat.add("ThreeHeadedDog (3)");
-        Creat.add("Troll (4)");
-        Creat.add("Unicorn (5)");
-        System.out.println(Creat);
 
-
-//user input
     System.out.println();
-    Scanner myObj = new Scanner(System.in);
+
+    //added scanner to scane user input 
+    Scanner input = new Scanner(System.in);
+
+    //make array of creatures to number
+        ArrayList<Creature> availableCreatures = new ArrayList<Creature>();  
+        availableCreatures.add(myDragon);
+        availableCreatures.add(myHippogriff);
+        availableCreatures.add(myMandrake);
+        availableCreatures.add(myThreeHeadedDog);
+        availableCreatures.add(myTroll);
+        availableCreatures.add(myUnicorn);
+        System.out.println(availableCreatures);
+
     
-    String creatureName1;
+
+    int selectedCreatureIndex;
+   
     // Enter first creature and press Enter
-    System.out.println("Enter first creature using the corresponding number that belongs to the creature you want: "); 
-    creatureName1 = myObj.nextLine();   
+    System.out.println("Enter first creature: "); 
+    selectedCreatureIndex = input.nextInt();
+    selectedCreature = availableCreatures[selectedCreatureIndex];
+    System.out.println(selectedCreature.description());
 
-  
-  //print out description of chosen creature
-    if (creatureName1.equals("0")){
-            System.out.println("Dragon: " + myDragon.description()); 
-        } 
 
-    else if (creatureName1.equals("1")){
-            System.out.println("Hippogriff: " + myHippogriff.description()); 
-        } 
-    
-    else if (creatureName1.equals("2")){
-            System.out.println("Mandrake: " + myMandrake.description()); 
-        } 
-    
-    else if (creatureName1.equals("3")){
-            System.out.println("ThreeHeadedDog: " + myThreeHeadedDog.description()); 
-        } 
-
-    else if (creatureName1.equals("4")){
-            System.out.println("Troll: " + myTroll.description()); 
-        } 
-    else if (creatureName1.equals("5")){
-            System.out.println("Unicorn: " + myUnicorn.description()); 
-        } 
-  
-  
-
-  
-    String creatureName2;
-    // Enter second creature and press Enter
+      // Enter second creature and press Enter
     System.out.println();
     System.out.println("Enter second creature: "); 
-    creatureName2 = myObj.nextLine();   
-       
-    
-  //print out description of chosen creature
-    if (creatureName2.equals("0")){
-            System.out.println("Dragon: " + myDragon.description()); 
-        } 
+    selectedCreatureIndex = input.nextInt();
+    selectedCreature = availableCreatures[selectedCreatureIndex];
+    System.out.println(selectedCreature.description());
 
-    else if (creatureName2.equals("1")){
-            System.out.println("Hippogriff: " + myHippogriff.description()); 
-        } 
-    
-    else if (creatureName2.equals("2")){
-            System.out.println("Mandrake: " + myMandrake.description()); 
-        } 
-    
-    else if (creatureName2.equals("3")){
-            System.out.println("ThreeHeadedDog: " + myThreeHeadedDog.description()); 
-        } 
 
-    else if (creatureName2.equals("4")){
-            System.out.println("Troll: " + myTroll.description()); 
-        } 
-    else if (creatureName2.equals("5")){
-            System.out.println("Unicorn: " + myUnicorn.description()); 
-        } 
-
-    }
-}
     //environment if and else statements --> increase strength depening on their best environment 
-
+    System.out.println();
+    System.out.println("Pick an environment! (environment may or may not increase strength depening on the creature): ");
+    chosenEnvir() = myObj.nextLine();
 
        
 
