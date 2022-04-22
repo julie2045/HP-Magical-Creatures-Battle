@@ -33,8 +33,6 @@ public class Main {
         availableCreatures.add(myUnicorn);     
         System.out.println("Dragon (0), Hippogriff (1), Mandrake (2), ThreeHeadedDog (3), Troll (4), Unicorn (5)");
 
-
-//user input
     System.out.println();
     Scanner input = new Scanner(System.in);
     
@@ -54,7 +52,9 @@ public class Main {
 
 
     //environment if and else statements --> increase strength depening on their best environment 
-
+    System.out.println();
+    System.out.println("Pick an environment! (environment may or may not increase strength depening on the creature): ");
+    chosenEnvir() = myObj.nextLine();
 
 
     //ask if ready to battle 
