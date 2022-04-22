@@ -23,19 +23,22 @@ public class Main {
         var myTroll = new Troll();
         var myUnicorn = new Unicorn();
 
- //make array of creatures to number
-      ArrayList<Creature> = availableCreatures = new ArrayList<Creature>();  
+    //make array of creatures to number
+    ArrayList<Creature> = availableCreatures = new ArrayList<Creature>();  
         availableCreatures.add(myDragon);
         availableCreatures.add(myHippogriff);
         availableCreatures.add(myMandrake);
         availableCreatures.add(myThreeHeadedDog);
         availableCreatures.add(myTroll);
         availableCreatures.add(myUnicorn);     
-        System.out.println("Dragon (0), Hippogriff (1), Mandrake (2), ThreeHeadedDog (3), Troll (4), Unicorn (5)");
+        for  (int i = 0;i < availableCreatures.size(); i++){
+          System.out.println(availableCreatures.get(i).species());
+          }
 
     System.out.println();
     Scanner input = new Scanner(System.in);
     
+    int selectedCreatureIndex;
     // Enter first creature and press Enter
     System.out.println("Enter first creature: "); 
     selectedCreatureIndex = input.nextInt();   //takes in the user input
