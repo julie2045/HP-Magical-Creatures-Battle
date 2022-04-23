@@ -5,18 +5,24 @@ public class Unicorn extends Creature{
     }
 
     public String description() {
-        return "Magical pure-white horses with a single horn on their foreheads. \nStrengths: powerful healing properties, magic has no effect on them \nWeaknesses: afraid of loud noises, drawn towards those with pure of heart or spirit";
+        return "Magical pure-white horses with a single horn on their foreheads.";
     }
 
+    public String strength() {
+        return "Strengths: powerful healing properties, magic has no effect on them.";
+    }
+    
+    public String weakness() {
+        return "Weaknesses: afraid of loud noises, drawn towards those with pure of heart or spirit.";
+    }
 
     public int health() {
         return 320;
     }
 
-    public int strength() {
+    public int damage() {
         return 20;
     }
-
 
     public Environment.envirTypes bestEnvir() {
         return Environment.envirTypes.FORBIDDEN_FOREST;

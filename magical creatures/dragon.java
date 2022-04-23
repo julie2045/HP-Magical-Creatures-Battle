@@ -5,15 +5,22 @@ public class Dragon extends Creature{
     }
 
     public String description() {
-        return "Giant winged, fire-breathing reptilian beasts \nStrengths: fly, breathe fire, giant creatures \nWeaknesses: eyes are their weakest point";
+        return "Giant winged, fire-breathing reptilian beasts.";
     }
 
+    public String strength() {
+        return "Strengths: fly, breathe fire, giant creatures.";
+    }
+
+    public String weakness() {
+        return "Weaknesses: eyes are their weakest point.";
+    }
 
     public int health() {
         return 290;
     }
 
-    public int strength() {
+    public int damage() {
         return 30;
     }
 

@@ -36,7 +36,9 @@ public class Main {
         availableCreatures.add(myThreeHeadedDog);
         availableCreatures.add(myTroll);
         availableCreatures.add(myUnicorn);
-        System.out.println(availableCreatures);
+        for  (int i = 0;i < availableCreatures.size(); i++){
+          System.out.println( i + " " + availableCreatures.get(i).species());
+          }
 
     
 
@@ -45,22 +47,19 @@ public class Main {
     // Enter first creature and press Enter
     System.out.println("Enter first creature: "); 
     selectedCreatureIndex = input.nextInt();
-    selectedCreature = availableCreatures[selectedCreatureIndex];
-    System.out.println(selectedCreature.description());
+    System.out.println(availableCreatures.get(selectedCreatureIndex).toString());
 
 
       // Enter second creature and press Enter
     System.out.println();
     System.out.println("Enter second creature: "); 
     selectedCreatureIndex = input.nextInt();
-    selectedCreature = availableCreatures[selectedCreatureIndex];
-    System.out.println(selectedCreature.description());
+    System.out.println(availableCreatures.get(selectedCreatureIndex).toString());
 
 
     //environment if and else statements --> increase strength depening on their best environment 
-    System.out.println();
-    System.out.println("Pick an environment! (environment may or may not increase strength depening on the creature): ");
-    chosenEnvir() = myObj.nextLine();
+    
+   
 
        
 
