@@ -30,16 +30,10 @@ public class Main {
         availableCreatures.add(myMandrake);
         availableCreatures.add(myThreeHeadedDog);
         availableCreatures.add(myTroll);
-<<<<<<< HEAD
         availableCreatures.add(myUnicorn);
         for  (int i = 0;i < availableCreatures.size(); i++){
-          System.out.println( i + " " + availableCreatures.get(i).species());
-=======
-        availableCreatures.add(myUnicorn);     
-        for  (int i = 0;i < availableCreatures.size(); i++){
-          System.out.println(availableCreatures.get(i).species());
->>>>>>> afe513b22c69e9241df9f1d08d707a650656720e
-          }
+             System.out.println(String.format("%d %s", i, availableCreatures.get(i).species()));
+        }
 
     System.out.println();
     Scanner input = new Scanner(System.in);
@@ -47,28 +41,14 @@ public class Main {
     int selectedCreatureIndex;
     // Enter first creature and press Enter
     System.out.println("Enter first creature: "); 
-<<<<<<< HEAD
     selectedCreatureIndex = input.nextInt();
     System.out.println(availableCreatures.get(selectedCreatureIndex).toString());
 
-=======
-    selectedCreatureIndex = input.nextInt();   //takes in the user input
-    System.out.println(availableCreatures.get(selectedCreatureIndex).description()); //puts the number to the corresponding creature and prints out description
-         
- 
->>>>>>> afe513b22c69e9241df9f1d08d707a650656720e
 
     // Enter second creature and press Enter
     System.out.println("Enter second creature: "); 
-<<<<<<< HEAD
     selectedCreatureIndex = input.nextInt();
     System.out.println(availableCreatures.get(selectedCreatureIndex).toString());
-=======
-    selectedCreatureIndex = input.nextInt();    //takes in the user input
-    System.out.println(availableCreatures.get(selectedCreatureIndex).description());//puts the number to the corresponding creature and prints out description
-         
-
->>>>>>> afe513b22c69e9241df9f1d08d707a650656720e
 
 
     //environment if and else statements --> increase strength depening on their best environment 
