@@ -4,15 +4,23 @@ public class Troll extends Creature {
         return "Troll"; 
     }
 
-    public String description () {
-        return "A large magical beast of prodigious strength and immense stupidity \nStrengths: strong and big \nWeaknesses: lack of intelligence";
+    public String description() {
+        return "A large magical beast of prodigious strength and immense stupidity.";
     }
 
+    public String strength() {
+        return "Strengths: strong and big.";
+
+    }
+   
+    public String weakness() {
+        return "Weaknesses: lack of intelligence.";
+    }
     public int health() {
         return 100;
     }
 
-    public int strength() {
+    public int damage() {
         return 15;
     }
 

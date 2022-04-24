@@ -1,3 +1,5 @@
+import java.util.Scanner; // import the Scanner class 
+import java.util.ArrayList; // import the ArrayList class
 
 public class Main {
 
@@ -9,35 +11,60 @@ public class Main {
 
         System.out.println("Play against yourself/another person and choose the best mythical creature to win the battle! ");
 
-        System.out.println("Choose your magical creature to use for battle!");
+        System.out.println("Choose your magical creature  with the corresponding number to use for battle!(0-5)");
         System.out.println("-".repeat(93));
-        //list of creatures
-        System.out.println("Troll");
-        System.out.println("Dragon");
-        System.out.println("Hippogriff");
-        System.out.println("Unicorn");
-        System.out.println("Cerberus");
-        System.out.println("Mandrake");
+ 
 
-//user input
+        //creating the creatures 
+        var myDragon = new Dragon();
+        var myHippogriff = new Hippogriff();
+        var myMandrake = new Mandrake();
+        var myThreeHeadedDog = new ThreeHeadedDog();
+        var myTroll = new Troll();
+        var myUnicorn = new Unicorn();
+
+    //make array of creatures to number
+    ArrayList<Creature> = availableCreatures = new ArrayList<Creature>();  
+        availableCreatures.add(myDragon);
+        availableCreatures.add(myHippogriff);
+        availableCreatures.add(myMandrake);
+        availableCreatures.add(myThreeHeadedDog);
+        availableCreatures.add(myTroll);
+        availableCreatures.add(myUnicorn);
+        for  (int i = 0;i < availableCreatures.size(); i++){
+             System.out.println(String.format("%d %s", i, availableCreatures.get(i).species()));
+        }
+
     System.out.println();
-    Scanner myObj = new Scanner(System.in);
+    Scanner input = new Scanner(System.in);
     
-    String creatureName1;
+    int selectedCreatureIndex;
     // Enter first creature and press Enter
     System.out.println("Enter first creature: "); 
-    creatureName1 = myObj.nextLine();   
-       
-    System.out.println("Chosen creature 1: " + creatureName1); 
-       System.out.println();
-    
-  
-    String creatureName2;
-    // Enter second creautre and press Enter
+    selectedCreatureIndex = input.nextInt();
+    System.out.println(availableCreatures.get(selectedCreatureIndex).toString());
+
+
+    // Enter second creature and press Enter
     System.out.println("Enter second creature: "); 
-    creatureName2 = myObj.nextLine();   
-       
-    System.out.println("Chosen creature 2: " + creatureName2);
-    }
+    selectedCreatureIndex = input.nextInt();
+    System.out.println(availableCreatures.get(selectedCreatureIndex).toString());
+
+
+    //environment if and else statements --> increase strength depening on their best environment 
+    
+   
+
+
+    //ask if ready to battle 
+    String readyBattle;
+    System.out.println("Ready for battle? (yes): ";
+    readyBattle = myObj.nextLine();
+    system.out.println("Fight!")
+
+
+    //battle begins, load each decrease of health 
+
+    //show the winner who does not have a health of zero first 
 }
 
