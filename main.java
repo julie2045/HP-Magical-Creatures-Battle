@@ -42,17 +42,43 @@ public class Main {
     // Enter first creature and press Enter
     System.out.println("Enter first creature: "); 
     selectedCreatureIndex = input.nextInt();
-    System.out.println(availableCreatures.get(selectedCreatureIndex).toString());
+    Creature1 = availableCreatures.get(selectedCreatureIndex);
+    System.out.println(Creature1.toString());
 
 
     // Enter second creature and press Enter
     System.out.println("Enter second creature: "); 
     selectedCreatureIndex = input.nextInt();
-    System.out.println(availableCreatures.get(selectedCreatureIndex).toString());
+    Creature2 = availableCreatures.get(selectedCreatureIndex);
+    System.out.println(Creature2.toString());
 
 
     //environment if and else statements --> increase strength depening on their best environment 
-    
+    System.out.println();
+    System.out.println("Pick an environment by typing in the corresponding number! (environment may or may not increase strength depening on the creature): ");
+  //creating environment 
+      Environment myMountain = Environment.MOUNTAINS;
+      Environment mySwamp = Environment.SWAMP;
+      Environment myForbiddenForest = Environment.FORBIDDEN_FOREST;
+      Environment myUnderworld = Environment.UNDERWORLD; 
+  
+    //make array of environment to number
+      ArrayList<Environment> availableEnvir = new ArrayList<Environment>();  
+      availableEnvir.add(myMountain);
+      availableEnvir.add(mySwamp);
+      availableEnvir.add(myForbiddenForest);
+      availableEnvir.add(myUnderworld);
+      
+       for  (int e = 0;e < availableEnvir.size(); e++){
+           System.out.println(String.format("%d %s", e, availableEnvir.get(e)));
+          }
+
+      int selectedEnvirIndex;
+      //entering environment 
+      System.out.println();
+      selectedEnvirIndex = input.nextInt();
+      selectedEnvir = availableEnvir.get(selectedEnvirIndex);
+      System.out.println("Environment is %d", selctedEnvir);
    
 
 
