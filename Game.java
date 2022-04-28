@@ -1,6 +1,6 @@
 import java.util.Scanner; // import the Scanner class 
 import java.util.ArrayList; // import the ArrayList class
-
+import java.lang.Math;
 
 class Game {
   Creature player1, player2;
@@ -102,12 +102,59 @@ System.out.println();
       System.out.println(String.format("Round %d:", round));
       System.out.println(String.format("%s: %d hp | %s: %d hp", this.player1.species(), this.player1.health(), this.player2.species(), this.player2.health()));
   
+    // Start the battle rounds, continue until one is defeated
+    int round = 1;
+    while (!this.isGameOver()); {
+      // Display game status
+      this.updateGameStatus(round);
+      void engageFight();
   
+      // Move to the next round of combat
+      round++; 
+      }
        
      }
+      void engageFight() {
+      //decide who gets to go first 
+      int diceRoll = (int) ((6*Math.random())+1);
+      if(diceRoll <= 3){
+        this.performBattle(this.player1, this.player2);
+      }
+      else{
+        this.performBattle(this.player2, this.player1);
+      }
+    }
+
+    //perform battle 
+      void performBattle(Creature p1, Creature p2) {
+         System.out.println(String.format("%s is attacking %s", p1.species(), p2.species()));
+        p1.inflictDamageTo(p2);
+     
+    }
+      
+
+   // Determine if the game is over
+  boolean isGameOver() {
+    if (this.player1.isDefeated()) {
+      System.out.println(String.format("%s is defeated! %s won the fight!", this.player1.species(), this.player2.species()));
+      return true;
+    } else if (this.player2.isDefeated()) {
+      System.out.println(String.format("%s is defeated! %s won the fight!", this.player2.species(), this.player1.species()));
+      return true;
+    }
+      return false;
+  }
+
+
+    //battle begins, reload each creature and health for each round
+      void updateGameStatus(int round) {
+      System.out.println(String.format("Round %d:", round));
+      System.out.println(String.format("%s: %d hp | %s: %d hp", this.player1.species(), this.player1.getHealth(), this.player2.species(), this.player2.getHealth()));
+      System.out.println("-".repeat(70));
+      
+    }
 }     
 
-    //show the winner who does not have a health of zero first 
-
+  
 
       

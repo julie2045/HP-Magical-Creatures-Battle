@@ -16,12 +16,18 @@ public class Mandrake extends Creature{
         return "Weaknesses: fire and ice.";
     }
 
-    public int health() {
-        return 115;
+     public int health() {
+        return this.health + 15;
     }
 
     public int damage() {
         return 15;
+    }
+
+    @Override   
+    public void inflictDamageTo(IDamageable target){
+    int targetHealth = target.health();
+    target.setHealth(targetHealth - 15);
     }
 
   public Environment.envirTypes bestEnvir() {

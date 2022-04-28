@@ -24,6 +24,17 @@ public class Unicorn extends Creature{
         return 20;
     }
 
+    public int health() {
+        return this.health + 220;
+    }
+
+    @Override
+    public void inflictDamageTo(IDamageable target){
+    int targetHealth = target.health();
+    target.setHealth(targetHealth - 20);
+    }
+  
+
     public Environment.envirTypes bestEnvir() {
         return Environment.envirTypes.FORBIDDEN_FOREST;
     }

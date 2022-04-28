@@ -8,9 +8,24 @@ public abstract class Creature {
 
     public abstract String weakness();
 
-    public abstract int health();
+    int health = 100;
+    public int getHealth(){
+      return this.health;
+    }
+
+    public void setHealth(int level) {
+    this.health = level;
+   }
 
     public abstract int damage();
+    
+    public boolean isDefeated() {
+    return this.health < 10;
+    }
+    public void inflictDamageTo(IDamageable target){
+    int targetHealth = target.health();
+    target.setHealth(targetHealth - this.damage());
+      }
 
     public  abstract Environment.envirTypes bestEnvir();
 

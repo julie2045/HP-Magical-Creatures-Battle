@@ -17,14 +17,20 @@ public class Troll extends Creature {
         return "Weaknesses: lack of intelligence.";
     }
     public int health() {
-        return 100;
+        return this.health;
     }
 
     public int damage() {
         return 15;
     }
 
-       public Environment.envirTypes bestEnvir() {
+    @Override
+    public void inflictDamageTo(IDamageable target){
+    int targetHealth = target.health();
+    target.setHealth(targetHealth - 15);
+    }
+
+    public Environment.envirTypes bestEnvir() {
         return Environment.envirTypes.MOUNTAINS;
        }
 

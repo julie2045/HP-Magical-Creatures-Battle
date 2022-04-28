@@ -17,13 +17,18 @@ public class Dragon extends Creature{
     }
 
     public int health() {
-        return 290;
+       return this.health + 190;
     }
 
     public int damage() {
         return 30;
     }
 
+    @Override
+    public void inflictDamageTo(IDamageable target){
+    int targetHealth = target.health();
+    target.setHealth(targetHealth - 30);
+  }
 
     public Environment.envirTypes bestEnvir() {
         return Environment.envirTypes.MOUNTAINS;
