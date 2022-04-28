@@ -67,7 +67,7 @@ System.out.println();
 
     //creating environment 
       Environment.envirTypes myMountain = Environment.envirTypes.MOUNTAINS;
-      Environment.envirTypes mySwamp = Environment.envirTypes.MOUNTAINS;
+      Environment.envirTypes mySwamp = Environment.envirTypes.SWAMP;
       Environment.envirTypes myForbiddenForest = Environment.envirTypes.FORBIDDEN_FOREST;
       Environment.envirTypes myUnderworld = Environment.envirTypes.UNDERWORLD;
   
