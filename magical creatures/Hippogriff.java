@@ -17,13 +17,19 @@ public class Hippogriff extends Creature{
       }
 
     public int health() {
-        return 220;
+        return this.health + 120;
     }
 
     public int damage() {
         return 20;
     }
 
+    @Override
+    public void inflictDamageTo(IDamageable target){
+        int targetHealth = target.health();
+        target.setHealth(targetHealth - 20);
+    }
+    
      public Environment.envirTypes bestEnvir() {
         return Environment.envirTypes.FORBIDDEN_FOREST;
     }

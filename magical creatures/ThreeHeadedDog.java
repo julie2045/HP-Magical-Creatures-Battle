@@ -16,14 +16,20 @@ public class ThreeHeadedDog extends Creature{
         return "Weakness: put to sleep by music.";
     }
 
-    public int health() {
-        return 250;
+     public int health() {
+        return this.health + 150;
     }
+
 
     public int damage() {
         return 25;
     }
-
+    
+    @Override
+    public void inflictDamageTo(IDamageable target){
+    int targetHealth = target.health();
+    target.setHealth(targetHealth - 25);
+    }
 
     public Environment.envirTypes bestEnvir() {
         return Environment.envirTypes.UNDERWORLD;
