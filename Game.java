@@ -97,11 +97,7 @@ System.out.println();
     System.out.println("Ready for battle? Alright fight!");
     System.out.println("-".repeat(70));
 
-    //battle begins, load each creature and health 
-      int round = 1;
-      System.out.println(String.format("Round %d:", round));
-      System.out.println(String.format("%s: %d hp | %s: %d hp", this.player1.species(), this.player1.health(), this.player2.species(), this.player2.health()));
-  
+
     // Start the battle rounds, continue until one is defeated
     int round = 1;
     while (!this.isGameOver()); {
