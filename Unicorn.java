@@ -1,7 +1,7 @@
-public class Unicorn extends Creature{
+public class Unicorn extends Creature {
 
     public String species() {
-        return "Unicorn"; 
+        return "Unicorn";
     }
 
     public String description() {
@@ -11,13 +11,9 @@ public class Unicorn extends Creature{
     public String strength() {
         return "Strengths: powerful healing properties, magic has no effect on them.";
     }
-    
+
     public String weakness() {
         return "Weaknesses: afraid of loud noises, drawn towards those with pure of heart or spirit.";
-    }
-
-    public int health() {
-        return 320;
     }
 
     public int damage() {
@@ -29,11 +25,10 @@ public class Unicorn extends Creature{
     }
 
     @Override
-    public void inflictDamageTo(IDamageable target){
-    int targetHealth = target.health();
-    target.setHealth(targetHealth - 20);
+    public void inflictDamageTo(IDamageable target) {
+        int targetHealth = target.health();
+        target.setHealth(targetHealth - 20);
     }
-  
 
     public Environment.envirTypes bestEnvir() {
         return Environment.envirTypes.FORBIDDEN_FOREST;
