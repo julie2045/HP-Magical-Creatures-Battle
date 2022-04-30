@@ -8,7 +8,7 @@ public abstract class Creature {
 
     public abstract String weakness();
 
-    int health = 100;
+    int health = 250;
     public int getHealth(){
       return this.health;
     }

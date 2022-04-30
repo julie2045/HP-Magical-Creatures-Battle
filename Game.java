@@ -103,6 +103,7 @@ System.out.println();
     while (!this.isGameOver()); {
       // Display game status
       this.updateGameStatus(round);
+      this.pause();
       void engageFight();
   
       // Move to the next round of combat
@@ -149,6 +150,17 @@ System.out.println();
       System.out.println("-".repeat(70));
       
     }
+    //slows down the display being outputted
+     void pause() {
+    this.pause(1000);
+  }
+   void pause(int milliseconds) {
+    try {
+      Thread.sleep(milliseconds);
+    } catch (Exception a) {
+      System.out.println(a.toString());
+    }
+  }
 }     
 
   

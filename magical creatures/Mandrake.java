@@ -17,7 +17,7 @@ public class Mandrake extends Creature{
     }
 
      public int getHealth() {
-        return this.health + 15;
+        return this.health;
     }
 
     public int damage() {

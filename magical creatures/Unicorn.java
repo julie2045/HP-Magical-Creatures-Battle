@@ -21,7 +21,7 @@ public class Unicorn extends Creature{
     }
 
     public int health() {
-        return this.health + 220;
+        return this.health;
     }
 
     @Override
