@@ -17,7 +17,7 @@ public class Hippogriff extends Creature{
       }
 
     public int getHealth() {
-        return this.health + 120;
+        return this.health;
     }
 
     public int damage() {

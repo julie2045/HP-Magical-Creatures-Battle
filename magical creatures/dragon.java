@@ -17,7 +17,7 @@ public class Dragon extends Creature{
     }
 
     public int getHealth() {
-       return this.health + 190;
+       return this.health;
     }
 
     public int damage() {

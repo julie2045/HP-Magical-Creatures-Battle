@@ -17,7 +17,7 @@ public class ThreeHeadedDog extends Creature{
     }
 
      public int getHealth() {
-        return this.health + 150;
+        return this.health;
     }
 
 
