@@ -100,7 +100,7 @@ System.out.println();
 
     // Start the battle rounds, continue until one is defeated
     int round = 1;
-    while (!this.isGameOver()); {
+    while (!this.isGameOver()) {
       // Display game status
       this.updateGameStatus(round);
       this.pause();
