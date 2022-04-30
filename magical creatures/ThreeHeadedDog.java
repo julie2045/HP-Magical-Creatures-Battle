@@ -16,7 +16,7 @@ public class ThreeHeadedDog extends Creature{
         return "Weakness: put to sleep by music.";
     }
 
-     public int health() {
+     public int getHealth() {
         return this.health + 150;
     }
 
@@ -27,7 +27,7 @@ public class ThreeHeadedDog extends Creature{
     
     @Override
     public void inflictDamageTo(IDamageable target){
-    int targetHealth = target.health();
+    int targetHealth = target.getHealth();
     target.setHealth(targetHealth - 25);
     }
 

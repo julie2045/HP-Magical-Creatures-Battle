@@ -23,7 +23,7 @@ public abstract class Creature {
     return this.health < 10;
     }
     public void inflictDamageTo(IDamageable target){
-    int targetHealth = target.health();
+    int targetHealth = target.getHealth();
     target.setHealth(targetHealth - this.damage());
       }
 
