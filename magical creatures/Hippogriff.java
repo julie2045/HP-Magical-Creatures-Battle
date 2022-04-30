@@ -16,7 +16,7 @@ public class Hippogriff extends Creature{
         return "Weaknesses: a bit too independent and have a hard time trusting others.";
       }
 
-    public int health() {
+    public int getHealth() {
         return this.health + 120;
     }
 
@@ -26,7 +26,7 @@ public class Hippogriff extends Creature{
 
     @Override
     public void inflictDamageTo(IDamageable target){
-        int targetHealth = target.health();
+        int targetHealth = target.getHealth();
         target.setHealth(targetHealth - 20);
     }
     

@@ -16,7 +16,7 @@ public class Dragon extends Creature{
         return "Weaknesses: eyes are their weakest point.";
     }
 
-    public int health() {
+    public int getHealth() {
        return this.health + 190;
     }
 
@@ -26,7 +26,7 @@ public class Dragon extends Creature{
 
     @Override
     public void inflictDamageTo(IDamageable target){
-    int targetHealth = target.health();
+    int targetHealth = target.getHealth();
     target.setHealth(targetHealth - 30);
   }
 

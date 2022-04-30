@@ -16,10 +16,6 @@ public class Unicorn extends Creature{
         return "Weaknesses: afraid of loud noises, drawn towards those with pure of heart or spirit.";
     }
 
-    public int health() {
-        return 320;
-    }
-
     public int damage() {
         return 20;
     }
@@ -30,7 +26,7 @@ public class Unicorn extends Creature{
 
     @Override
     public void inflictDamageTo(IDamageable target){
-    int targetHealth = target.health();
+    int targetHealth = target.getHealth();
     target.setHealth(targetHealth - 20);
     }
   

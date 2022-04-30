@@ -16,7 +16,7 @@ public class Mandrake extends Creature{
         return "Weaknesses: fire and ice.";
     }
 
-     public int health() {
+     public int getHealth() {
         return this.health + 15;
     }
 
@@ -26,7 +26,7 @@ public class Mandrake extends Creature{
 
     @Override   
     public void inflictDamageTo(IDamageable target){
-    int targetHealth = target.health();
+    int targetHealth = target.getHealth();
     target.setHealth(targetHealth - 15);
     }
 

@@ -16,7 +16,7 @@ public class Troll extends Creature {
     public String weakness() {
         return "Weaknesses: lack of intelligence.";
     }
-    public int health() {
+    public int getHealth() {
         return this.health;
     }
 
@@ -26,7 +26,7 @@ public class Troll extends Creature {
 
     @Override
     public void inflictDamageTo(IDamageable target){
-    int targetHealth = target.health();
+    int targetHealth = target.getHealth();
     target.setHealth(targetHealth - 15);
     }
 
